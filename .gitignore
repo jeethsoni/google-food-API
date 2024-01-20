@@ -2,4 +2,3 @@
 .DS_Store
 .flake8
 **/__pycache__
-**/excel
