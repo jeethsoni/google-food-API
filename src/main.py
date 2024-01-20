@@ -34,6 +34,7 @@ def main():
     with open("../data/results.json", 'w') as wf:
         json.dump(results, wf, indent=4)
 
+    # calls the function
     excel_helper(search)
 
 
