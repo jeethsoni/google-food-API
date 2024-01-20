@@ -28,6 +28,7 @@ def excel_helper(search):
     file_path = f"../excel/{filename}"
     excel_file = f"{file_path}_search_results.xlsx"
 
+    # opens workbook and adds sheet
     wb = xlsxwriter.Workbook(excel_file)
     ws = wb.add_worksheet()
 
