@@ -25,7 +25,7 @@ This is how the magic happens 😄
 
 Here are the steps to run on your computer: 
 
-* Go to https://console.cloud.google.com/projectselector2/apis/credentials?authuser=2&supportedpurview=project to grab your `API key.  `
+* Go to https://console.cloud.google.com/projectselector2/apis/credentials?authuser=2&supportedpurview=project to grab your `API key.`
 
 * Enable your custom search API here - https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com
 
