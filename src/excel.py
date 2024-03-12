@@ -48,6 +48,9 @@ def excel_helper(search):
         col_num = 0
         for key in selected_columns:
             value = data_items.get(key)  # Get the value for the key or an empty string if key not present
+            if search in data_items["title"]:
+                new_title = search
+                ws.write(item_count + 1, col_num, new_title)
             ws.write(item_count + 1, col_num, value)
             col_num += 1
 
