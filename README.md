@@ -7,17 +7,17 @@
 
 ### **Description**
 
-A custom search API for food items. Enter the food item name you would like to search on, it will do its magic and insert the name, website link, author and description in Excel Sheet.
+Discover a personalized search API designed specifically for food items. Simply input the name of the food item you're interested in, and watch as it effortlessly populates an Excel sheet with the item's name, website link, author details, and a brief description.
 
 ### **How does it work?**
 
-* Step one, I set up my Google developer account, created an `API key` and enabled the custom search API. I also created my custom search programmable engine and grabbed the `CX` ID. 
+* I set up my Google developer account, created an `API key`, and enabled the custom search API. I also created my custom search programmable engine and grabbed the `CX` ID. 
 
-* In my `main.py`, I defined a function called `custom_search` with a `search` parameter. I loaded the API Key from my `.env` file and built a service object to interact with Google using `build`` serivce that google provides. Then, called the `list` method on `service.cse`, passed the `search` and `CX ID` to search on my custom search engine and returned the result.
+* In my `main.py`, I defined a function called `custom_search` with a `search` parameter. I loaded the API Key from my `.env` file and built a service object to interact with Google using the `build` service that Google provides. Then, I called the `list` method on `service.cse`, passed the `search` and `CX ID` to search on my custom search engine, and returned the result.
 
-* I called the `custom_search` function and passed the `search` variable into my main function. I stored the results as `json` file. 
+* I called the `custom_search` function and passed the `search` variable into my main function. I stored the results as `JSON` file. 
 
-* For parsing the JSON and exporting it into Excel, I created a function called `excel_helper`. I used `xlsxwriter` module to help me parse the JSON data. I created a workbook with the help of `workbook` class that xlswriter provides. I used a while loop for the item count. In my program, I am grabbing the very first item in the search result. To insert selected columns, I used for loop to iterate over each item in the list of columns created and insert it using `.write ` method. To insert rows, I used two for loops, one for the title and link column and the second for the remaining columns.
+* Python parser searches Google API and exports JSON data into an excel spreadsheet.
 
 This is how the magic happens 😄
 
